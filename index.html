@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	
+	<title>DalekShop</title>
+	
+
+	<!-- Normalize CSS - Normalizar entre os navegador p/ ter consistencia-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+
+
+</head>
+<body>
+
+	<div id="container"><!-- Início container -->
+		
+		<header><!-- Início header -->
+			<div id="logo">
+				<h1><a href="">DalekShop</a></h1>
+			</div>
+
+			<nav><!-- Início nav -->
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="../DalekShop/pages/shop.html">SHOP</a></li>
+			        <li><a href="../DalekShop/pages/carrinho.html">Carrinho</a></li>
+			        <li><a href="../DalekShop/pages/blog.html">BLOG</a></li>
+			        <li><a href="../DalekShop/pages/contato.html">contato</a></li>
+				</ul>
+			</nav><!--/fim nav -->
+			<div id="social">
+				<a href="">
+					<img src="img/twitter.png" alt="logo do twitter"> </a>
+					<a href="">
+					<img src="img/instagram.png" alt="logo do instagram"> </a>
+					<a href="">
+					<img src="img/facebook.png" alt="logo do facebook"> </a>
+			</div>
+
+		</header><!--/fim header -->
+
+		<div id="principal"><!-- Início principal -->
+			
+			<div id="conteudo"><!-- Início conteudo -->
+				<section class="capa">
+					<a href="../DalekShop/pages/shop2.html">
+					<img class='foto' src="img/bannercomprar1.png" alt="banner principal de anuncio"> 
+				</a>
+
+					<section id="postagens">
+						<article id="video">
+							<h3>O Novo Doutor está chegando!</h3>
+							<iframe width="310" height="170" src="https://www.youtube.com/embed/0o16_t55uwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</article>
+	
+						<article id="mapa">
+							<h3>Mapa: Conheça nossa loja.</h3>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.3843540228927!2d-51.07525794912269!3d-29.99711823594905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951975b80f4561f7%3A0x2eee24dcb7237d62!2sIQ%20College%20%26%20Technical%20School!5e0!3m2!1sen!2sbr!4v1668004318747!5m2!1sen!2sbr" width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</article>
+
+						<article id="blog">
+							<h3>Blog</h3>
+							<ul>
+								<li><a href="../DalekShop/pages/blog2.html">Resenha: The Power of the Doctor</a></li>
+									<li><a href="#">BBC e Disney unem forças com Doctor Who</a></li>
+									<li><a href="#">A entrevista de despedida de Jodie Whittaker</a></li>
+									<li><a href="#">Quem são Ace e Tegan?</a></li>
+									<li><a href="#"><strong>Veja todos (190)</strong></a></li>
+								
+							</ol>
+						</article>
+
+						<article id="nos">
+							<h3>Quem somos nós?</h3>
+							<p>Somos uma loja focada em artigos de Doctor Who. 
+								Doctor Who é uma série de ficção científica britânica, produzida e transmitida pela BBC desde 1963. A série retrata as aventuras do Doutor, um Senhor do Tempo alienígena do planeta Gallifrey, que explora o universo em sua máquina do tempo, uma sensível nave espacial conhecida como TARDIS(time and relative dimension in space), cuja aparência exterior se assemelha a uma cabine de polícia londrina de 1963. Juntamente aos seus companheiros, o Doutor enfrenta uma variedade de inimigos, enquanto trabalha para salvar as civilizações, ajudar as pessoas comuns e corrigir erros.
+							</p>
+						</article>
+				</section>
+			</div><!--/fim conteudo -->
+
+			<aside><!-- Início aside -->
+				<section id="prevenda">
+					<a href="">
+					<img src="img/prevenda.png" alt="banner de anuncio de prevenda"></a>
+					<div class="btn-container">
+						<button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+						<button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+					</div>
+				</section>
+
+				</section >
+
+
+				<section id="visita"><!-- Início seção visita -->
+					<h4>Faça uma visita</h4>
+					<form>
+						<fieldset>
+							<legend>Selecione uma data</legend>
+							
+							<label for="data">Data</label>
+							<input class="campo" type="date">
+
+							<label for="qtd">Qtd pessoas</label>
+							<input class="campo" style="width: 30px;" type="text" id="qtd" value="1">
+
+						</fieldset>
+
+						<input class="botao" type="submit" onclick="funcao1()" value="Verificar disponibilidade">
+						<script>
+							function funcao1()
+							{
+							var x;
+							var r=confirm("Estamos atualmente fechados!");
+							if (r==true)
+							  {
+							  x="você pressionou OK!";
+							  }
+							else
+							  {
+							  x="Você pressionou Cancelar!";
+							  }
+							document.getElementById("demo").innerHTML=x;
+							}
+							</script>
+
+
+					</form>
+				</section><!--/fim seção visita -->
+
+				<section id="novidade">
+					<h4>Novidades</h4>
+					
+					<a href="">
+						<img src="img/imagem1.jpg" height="93" width="93" alt="objetos colecionaveis">
+					</a>
+
+					<a href="">
+						<img src="img/imagem2.png" height="93" width="93" alt="livros e dvds">
+					</a>
+
+					<a href="">
+						<img src="img/imagem3.png" height="93" width="93" alt="conecas e quadros">
+					</a>
+
+					<a href="">
+						<img src="img/imagem4.png" height="93" width="93" alt="figuras colecionaveis">
+					</a>
+
+				</section>
+
+			</aside><!--/fim aside -->
+	
+
+			<footer>
+				<img src="../DalekShop/img/logo-dark.min.png" alt="Logo oficial de Doctor Who">
+				<p>
+					<a href="#">Home</a>
+					<a href="#">Shop</a>
+					<a href="#">Carrinho</a>
+					<a href="#">Blog</a>
+					<a href="#">Contato</a>
+				</p>
+				<p>&copy; Desenvolvido por Kleiton Tariga - 2022. Direitos reservados BBC.</p>
+			</footer>
+		</div><!--/fim principal -->
+
+
+	</div><!--/fim container -->
+	<script type="text/javascript" src="js/font.js"></script>
+</body>
+
+</html>

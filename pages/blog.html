@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	
+	<title>Blog</title>
+	
+
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<!-- Estilo customizado -->
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+	<![endif]-->
+
+
+</head>
+<body>
+
+	<div id="container"><!-- Início container -->
+		
+		<header><!-- Início header -->
+			<div id="logo">
+				<h1><a href="">DalekShop</a></h1>
+			</div>
+
+			<nav><!-- Início nav -->
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../pages/shop.html">SHOP</a></li>
+			        <li><a href="../pages/carrinho.html">Carrinho</a></li>
+			        <li><a href="#">BLOG</a></li>
+			        <li><a href="../pages/contato.html">contato</a></li>
+				</ul>
+			</nav><!--/fim nav -->
+
+			<div id="social">
+				<a href="">
+					<img src="../img/twitter.png" alt="logo do twitter"> </a>
+					<a href="">
+					<img src="../img/instagram.png" alt="logo do instagram"> </a>
+					<a href="">
+					<img src="../img/facebook.png" alt="logo do facebook"> </a>
+			</div>
+		</header><!--/fim header -->
+
+		<div id="principal" style="border: 1px solid rgb(255, 255, 255); background: #705391"><!-- Início principal -->
+			
+			<div id="conteudo"><!-- Início conteudo -->
+				<section class="blog">
+                    
+                    <div >
+                        <h2> Resenha: The Power of the Doctor</h2>
+                        <img src="../img/powerof.jpg" alt="imagem promocional de the power of the doctor">
+                        <p>Quando um trem espacial é atacado pelos CyberMestres (sim, aqueles mesmos do final da décima segunda temporada que escaparam de Gallifrey com o Mestre), a Doutora e seus companions acabam entrando em uma jornada que leva ao fim dessa era.</p>
+                        <a href="../pages/blog2.html">Leia Mais</a>
+                    </div>
+
+                    <div >
+                        <h2> BBC e Disney unem forças com Doctor Who</h2>
+                        <img src="../img/disney.jpeg" alt="logo da disney e a tardis de doctor who">
+                        <p>A BBC continua como a casa exclusiva de Doctor Who no Reino Unido – novos episódios vão estrear na BBC e Disney+ no final de 2023.
+
+                            A BBC e a Disney Branded Television – duas gigantes do entretenimento – se uniram para transformar Doctor Who em uma franquia global para o público do Reino Unido e do resto do mundo..</p>
+                        <a href="#">Leia Mais</a>
+                    </div>
+					
+				</section>
+			</div><!--/fim conteudo -->
+
+			<aside><!-- Início aside -->
+				<section id="prevenda">
+					<a href="">
+					<img src="../img/prevenda.png" alt="banner de anuncio de prevenda"></a>
+					<div class="btn-container">
+						<button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+						<button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+					</div>
+				</section>
+
+				</section>
+
+
+				<section id="visita"><!-- Início seção visita -->
+					<h4>Faça uma visita</h4>
+					<form>
+						<fieldset>
+							<legend>Selecione uma data</legend>
+							
+							<label for="data">Data</label>
+							<input class="campo" type="date" >
+
+							<label for="qtd">Qtd pessoas</label>
+							<input class="campo" style="width: 30px;" type="text" id="qtd" value="1">
+
+						</fieldset>
+
+						<input class="botao" type="submit" onclick="funcao1()" value="Verificar disponibilidade">
+						<script>
+							function funcao1()
+							{
+							var x;
+							var r=confirm("Estamos atualmente fechados!");
+							if (r==true)
+							  {
+							  x="você pressionou OK!";
+							  }
+							else
+							  {
+							  x="Você pressionou Cancelar!";
+							  }
+							document.getElementById("demo").innerHTML=x;
+							}
+							</script>
+
+
+					</form>
+				</section><!--/fim seção visita -->
+
+				<section id="novidade">
+					<h4>Novidades</h4>
+					
+					<a href="">
+						<img src="../img/imagem1.jpg" height="93" width="93" alt="objetos colecionaveis">
+					</a>
+
+					<a href="">
+						<img src="../img/imagem2.png" height="93" width="93" alt="livros e dvds">
+					</a>
+
+					<a href="">
+						<img src="../img/imagem3.png" height="93" width="93" alt="conecas e quadros">
+					</a>
+
+					<a href="">
+						<img src="../img/imagem4.png" height="93" width="93" alt="figuras colecionaveis">
+					</a>
+
+				</section>
+
+			</aside><!--/fim aside -->
+	
+
+			<footer>
+				<img src="../DalekShop/img/logo-dark.min.png" alt="Logo oficial de Doctor Who">
+				<p>
+					<a href="#">Home</a>
+					<a href="#">Shop</a>
+					<a href="#">Carrinho</a>
+					<a href="#">Blog</a>
+					<a href="#">Contato</a>
+				</p>
+				<p>&copy; Desenvolvido por Kleiton Tariga - 2022. Direitos reservados BBC.</p>
+			</footer>
+		</div><!--/fim principal -->
+
+
+	</div><!--/fim container -->
+	<script type="text/javascript" src="../js/font.js"></script>
+</body>
+
+</html>
