@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+    <style>
+    form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  font: 1em sans-serif;
+
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  
+  border-color: #000;
+}
+
+textarea {
+  
+  vertical-align: top;
+
+  
+  height: 5em;
+}
+
+.button {
+  
+  padding-left: 90px; 
+}
+
+button {
+ 
+  margin-left: .5em;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+section#contato h4 {
+	text-align: center;
+	margin-top: 50px;
+	
+}
+    </style>
+
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Carrinho</title>
+	
+
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<!-- Estilo customizado -->
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+	<![endif]-->
+
+
+</head>
+<body>
+
+	<div id="container"><!-- Início container -->
+		
+		<header><!-- Início header -->
+			<div id="logo">
+				<h1><a href="">DalekShop</a></h1>
+			</div>
+
+			<nav><!-- Início nav -->
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="hop.html">SHOP</a></li>
+			        <li><a href="carrinho.html">Carrinho</a></li>
+			        <li><a href="shop.html">BLOG</a></li>
+			        <li><a href="#">contato</a></li>
+				</ul>
+			</nav><!--/fim nav -->
+			<div id="social">
+				<a href="">
+					<img src="../img/twitter.png" alt="logo do twitter"> </a>
+					<a href="">
+					<img src="../img/instagram.png" alt="logo do instagram"> </a>
+					<a href="">
+					<img src="../img/facebook.png" alt="logo do facebook"> </a>
+			</div>
+
+
+		</header><!--/fim header -->
+
+		<div id="principal" style="border: 1px solid rgb(255, 255, 255); background: #705391"><!-- Início principal -->
+			
+			<div id="conteudo"><!-- Início conteudo -->
+				<section id="contato">
+					<h4>Contato</h4>
+
+                    <form action=”/formulario-contato” method=”post”>
+                        <div>
+                            <label for="nome">Nome:</label>
+                            <input type="texto" id="nome" name="nome_usuario">
+                        </div>
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email_usuario">
+                        </div>
+                        <div>
+                            <label for="texto">Texto:</label>
+                            <textarea id="texto" name="texto_usuario"></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                          </div>
+                    </form>
+			</div><!--/fim conteudo -->
+
+			<aside><!-- Início aside -->
+				<section id="prevenda">
+					<a href="">
+					<img src="../img/prevenda.png" alt="banner de anuncio de prevenda"></a>
+					<div class="btn-container">
+						<button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+						<button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+					</div>
+				</section>
+
+				</section >
+
+				<section id="novidade">
+					<h4>Novidades</h4>
+					
+					<a href="">
+						<img src="../img/imagem1.jpg" height="93" width="93" alt="objetos colecionaveis">
+					</a>
+
+					<a href="">
+						<img src="../img/imagem2.png" height="93" width="93" alt="livros e dvds">
+					</a>
+
+					<a href="">
+						<img src="../img/imagem3.png" height="93" width="93" alt="conecas e quadros">
+					</a>
+
+					<a href="">
+						<img src="../img/imagem4.png" height="93" width="93" alt="figuras colecionaveis">
+					</a>
+
+				</section>
+
+			</aside><!--/fim aside -->
+	
+
+			<footer>
+				<img src="../DalekShop/img/logo-dark.min.png" alt="Logo oficial de Doctor Who">
+				<p>
+					<a href="#">Home</a>
+					<a href="#">Shop</a>
+					<a href="#">Carrinho</a>
+					<a href="#">Blog</a>
+					<a href="#">Contato</a>
+				</p>
+				<p>&copy; Desenvolvido por Kleiton Tariga - 2022. Direitos reservados BBC.</p>
+			</footer>
+		</div><!--/fim principal -->
+
+
+	</div><!--/fim container -->
+	<script type="text/javascript" src="../js/font.js"></script>
+
+</body>
+
+</html>
